@@ -71,7 +71,7 @@ epithelium.initWithData(data);
 ```
 
 ### Bayesian tension inference
-The Bayesian tension inference is implemented as described in [![DOI](http://dx.doi.org/10.1016/j.jtbi.2012.08.017)].
+The Bayesian tension inference is implemented as described in Ishihara & Sugimura (2012, doi:10.1016/j.jtbi.2012.08.017).
 The inferred tensions and pressures are expressed as a vector p and written into a dictionary returned by balanceMatrix() with a key “p”. Number arrays projection_edge and projection_cell map indices of edges and cells to the inferred result, where a tension on i-th edge is stored in p(projection_edge(i)) and a pressure in j-th cell is stored in p(projection_cell(j)). Both projection_edge and projection_cell are in the dictionary with keys of their names.
 ```
 %% get balance matrix
